@@ -34,7 +34,7 @@ p {
     grid-column-end: 3;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1.75fr;
+    grid-template-rows: 1fr 1.6fr;
 }
 
 .main {
@@ -152,9 +152,53 @@ p {
 
 .bottomhalf {
     grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4.26fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.bottomhalf img {
+    object-fit: contain;
 }
 
 .tophalf p {
     font-weight: bold;
     margin-left: 5%;
+}
+
+#bottomavatar {
+    height: 75%;
+    width: 75%;
+    justify-self: end;
+}
+
+#toptext {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+
+#bottomtext {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.bottomhalf button {
+    color: white;
+    background-color: rgb(26, 146, 213);
+    border: none;
+    width: 70%;
+    height: 35%;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#button1 {
+    margin-left: 20%;
+}
+
+#button2 {
+    margin-left: 10%;
 }
