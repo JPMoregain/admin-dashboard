@@ -4,7 +4,7 @@
 }
 
 p {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -17,13 +17,14 @@ p {
 }
 
 .sidebar {
-    background-color: rgb(66, 146, 207);
+    background-color: rgb(26, 146, 213);
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
     display: grid;
-    grid-template-rows: 1fr 3.9fr 2fr 6.75fr;
+    grid-template-rows: 1fr 3.9fr 2fr 9fr;
+    grid-template-columns: 1fr;
     height: 100vh;
 }
 
@@ -50,33 +51,48 @@ p {
 .sidebar p {
     color: white;
     align-self: center;
-    font-size: 24px;
+    font-size: 1.4em;
 }
 
-.sidebar > .top {
+.top {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-row-start: 1;
     grid-row-end: 2;
+    padding: 20px;
 }
 
-.sidebar > .middle {
+.top p {
+    font-size: 28px;
+}
+
+.middle {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding: 20px;
 }
 
-.sidebar > .bottom {
+.middle p {
+    margin-left: 5px;
+}
+
+.bottom {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-start: 3;
     grid-row-end: 4;
+    padding: 20px;
 }
 
-.sidebar > .empty {
+.bottom p {
+    margin-left: 5px;
+}
+
+.empty {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -86,4 +102,13 @@ p {
 
 .sidebar img {
     justify-self: center;
+    object-fit: contain;
+    width: 60%;
+    height: 60%;
+    align-self: center;
+}
+
+.top img {
+    width: 85%;
+    height: 85%;
 }
