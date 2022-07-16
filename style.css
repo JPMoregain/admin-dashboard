@@ -47,7 +47,7 @@ p {
     grid-column-start: 2;
     grid-column-end: 3;
     display: grid;
-    grid-template-columns: 1fr 1fr 0.8fr;
+    grid-template-columns: 1fr 1fr 0.7fr;
     grid-template-rows: 1fr 3.75fr 3.75fr 3.75fr;
     align-items: center;
     padding-left: 2%;
@@ -291,9 +291,80 @@ p {
 
 .announcements {
     background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 
 .trendingaccounts {
     background-color: white;
     margin-bottom: 3%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 2%;
+    display: grid;
+    grid-template-columns: 1fr 2.35fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.trendingaccounts img {
+    justify-self: center;
+}
+
+.trendingaccounts p {
+    font-size: 0.9em;
+}
+
+.accountdescription {
+    color: grey;
+}
+#trending {
+    font-weight: 500;
+    font-size: 1.2em;
+    align-self: end;
+    padding-bottom: 3%;
+}
+
+.announcementtitles {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding-top: 5%;
+}
+
+.announcementtext {
+    font-size: 0.7em;
+    color: grey;
+    margin-top: 2%;
+}
+
+#firstannouncement { 
+    border-bottom: 1px solid lightgray;
+    padding: 4%;
+    padding-bottom: 8%;
+}
+
+#secondannouncement {
+    border-bottom: 1px solid lightgray;
+    padding: 4%;
+}
+
+#thirdannouncement {
+    padding: 4%;
+}
+
+#oversizedavatar {
+    height: 70%;
+    width: 70%;
+    padding-right: 5%;
+}
+
+.avatars {
+    height: 60%;
+    width: 60%;
 }
